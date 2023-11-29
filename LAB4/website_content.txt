@@ -1,0 +1,23 @@
+{
+  "Pages found": {
+    "/home": "<!DOCTYPE html>\n\n<html>\n<body>\n<h1>Home page</h1>\n</body>\n</html>",
+    "/about": "<!DOCTYPE html>\n\n<html>\n<body>\n<h1>About</h1>\n</body>\n</html>",
+    "/products": "<!DOCTYPE html>\n\n<html>\n<body>\n<h1>List of available products</h1>\n</body>\n</html><a href=\"/product/1\"> Product: Fluent Python: Clear, Concise, and Effective Programming </a><br/><a href=\"/product/2\"> Product: Introducing Python: Modern Computing in Simple Packages </a><br/>",
+    "/product/1": "\n<h2>Product review</h2>\n<ul>\n<li>\n<span>Product ID: </span>\n<span>1</span>\n</li>\n<li>\n<span>Product name: </span>\n<span>Fluent Python: Clear, Concise, and Effective Programming</span>\n</li>\n<li>\n<span>Product author: </span>\n<span>Luciano Ramalho</span>\n</li>\n<li>\n<span>Product description: </span>\n<span>Don't waste time bending Python to fit patterns you've learned in other languages. Python's simplicity lets you become productive quickly, but often this means you aren't using everything the language has to offer. With the updated edition of this hand</span></li></ul>",
+    "/product/2": "\n<h2>Product review</h2>\n<ul>\n<li>\n<span>Product ID: </span>\n<span>2</span>\n</li>\n<li>\n<span>Product name: </span>\n<span>Introducing Python: Modern Computing in Simple Packages</span>\n</li>\n<li>\n<span>Product author: </span>\n<span>Bill Lubanovic</span>\n</li>\n<li>\n<span>Product description: </span>\n<span>Easy to understand and fun to read, this updated edition of Introducing Python is ideal for beginning programmers as well as those new to the language. Author Bill Lubanovic takes you from the basics to more involved and varied topics, mixing tutorials w</span></li></ul>"
+  },
+  "Items found": [
+    {
+      "Product ID: ": "1",
+      "Product name: ": "Fluent Python: Clear, Concise, and Effective Programming",
+      "Product author: ": "Luciano Ramalho",
+      "Product description: ": "Don't waste time bending Python to fit patterns you've learned in other languages. Python's simplicity lets you become productive quickly, but often this means you aren't using everything the language has to offer. With the updated edition of this hand"
+    },
+    {
+      "Product ID: ": "2",
+      "Product name: ": "Introducing Python: Modern Computing in Simple Packages",
+      "Product author: ": "Bill Lubanovic",
+      "Product description: ": "Easy to understand and fun to read, this updated edition of Introducing Python is ideal for beginning programmers as well as those new to the language. Author Bill Lubanovic takes you from the basics to more involved and varied topics, mixing tutorials w"
+    }
+  ]
+}

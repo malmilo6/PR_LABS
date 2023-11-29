@@ -1,0 +1,66 @@
+{
+  "Owner info": {
+    "Name": " aemd ",
+    "On website since": "Pe site din iunie 2013",
+    "Last Update": "Data actualizării: 27 sept. 2023, 20:31",
+    "Add type": "Tipul: Vând",
+    "Views": "Vizualizări: 3 522 (astăzi 45)"
+  },
+  "Description": "Masina care ofera emotii deosebite si care te evidentiaza. Este folosita ca masina de vacanta. \nCabriolet cu decapotare electrica de la buton.  \nAnul 2014 restyling cu parcurs original 112.000 km   provenienta - Germania - devamata in luna iunie 2023. \nFara accidente si defecte ascunse.\nUn singur proprietar a avut. Toata istoria pina la ultimul km este carte de service si are toate 3 chei originale. \nMotor simplu 1.0 Atmosferic prin lant 71 cp cel mai reusit. Cutie Automata. \nPe 22.07 facuta deservire totala (schimb ulei motor si cutie, filtre, adaptare cutie, schimb curaua generator, toti 4 rulmenti de la roti, bucsele la stabilizator etc.)\nNu are Nevoie de investitii .\nSalon pastrat si curat ca nou \nDotari:\n*Incalzire scaune \n*Clima\n*Subwoofer din uzina\n*Turometru si ceas\n*Jante aliaj \n*Volan cu servodirectie electrica\netc.\nCine doreste mai ieftin priveste pe mobile.de ce preturi sint la smart cabrio neaccidentat de acest an.",
+  "General": {
+    " Tip ofertă ": "   Vând    ",
+    " Marcă ": "  Smart  ",
+    " Modelul ": "  Fortwo  ",
+    " Înmatriculare ": "   Republica Moldova    ",
+    " Stare ": "  Cu rulaj  ",
+    " Disponibilitate ": "   Disponibil    ",
+    " Piața ": "   Europa    "
+  },
+  "Securitate": {
+    " Sistem de antiblocare a frânelor (ABS) ": "None",
+    " Sistem antiderapare (TCS, ASR, TRC) ": "None",
+    " Airbag pasager ": "None",
+    " Sistem de stabilizare (ESP, DSC, VDC, ESC) ": "None",
+    " Airbag șofer ": "None",
+    " Imobilizator ": "None",
+    " Pneuri vară ": "None",
+    " Jante aliaj ușor ": "None",
+    " Cameră marsarier ": "None"
+  },
+  "Particularități": {
+    " Autorul anunțului ": "   Persoană fizică    ",
+    " Anul fabricației ": "   2014    ",
+    " Volan ": "  Stânga  ",
+    " Numărul de locuri ": "   2    ",
+    " Tip caroserie ": "  Cabriolet  ",
+    " Numărul de uși ": "   2    ",
+    " Kilometraj ": "  112 000   km  ",
+    " Capacit. motor (cm³) ": "  1 000   cm³  ",
+    " Tip combustibil ": "  Benzină  ",
+    " Cutia de viteze ": "  Automată  ",
+    " Tip tracțiune ": "  Din spate  ",
+    " Culoarea ": "   Hameleon    "
+  },
+  "Confort": {
+    " Aer condiționat ": "None",
+    " Climă automată ": "None",
+    " Servodirecție ": "None",
+    " Geamuri electrice ": "None",
+    " Scaune cu încălzire ": "None",
+    " Oglinzi cu încălzire ": "None",
+    " Lacăt centralizat ": "None",
+    " Sistem audio, Bluetooth ": "None",
+    " Tapițerie textilă ": "None",
+    " Geamuri tonate ": "None"
+  },
+  "Subcategorie": " Autoturisme ",
+  "Prices": {
+    " 7 800 ": " € ",
+    " ≈ 8 265 ": " $ ",
+    " ≈ 150 142 ": " lei "
+  },
+  "Region&&Contacts": {
+    "Region": "Moldova,Chișinăumun.",
+    "Contacts": "tel:+37379570222"
+  }
+}
