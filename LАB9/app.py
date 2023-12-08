@@ -6,20 +6,20 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET', 'POST'])
 def form():
-    if request == 'POST':
 
-        message = {
-            "sender": request.form.get('email_from'),
-            "recipient": request.form.get('email_to'),
-            "message": request.form.get('message'),
-            "file_path": request.form.get('file_path')
-        }
+    message = {
+        "sender": request.form.get('email_from'),
+        "recipient": request.form.get('email_to'),
+        "message": request.form.get('message'),
+        "file_path": request.form.get('file_path')
+    }
 
+    if all(message.values()):
         sender = SenderServer(message)
         sender.send_email()
         sender.upload_file()
-
-        return 'Form Submitted!'
+    else:
+        print('Missing required fields.')
 
     return render_template('form.html')
 

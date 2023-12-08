@@ -1,34 +1,60 @@
 import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from ftplib import FTP
-
-FTP_SERVER = '127.0.0.1'
-FTP_PORT = 6699
-FTP_USERNAME = 'user'
-FTP_PASSWORD = '12345'
-SMTP_SERVER = '127.0.0.1'
-SMTP_PORT = 1025
-FILE_PATH = '/home/malmilo/Uni/PR_LABS_TASKS/LАB9/local_storage/'
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
 
 
 class SenderServer:
-    def __init__(self, email):
-        self.sender = email['sender']
-        self.recipient = email['recipient']
-        self.message = email['message']
-        self.smtp_port = SMTP_PORT
-        self.smtp_server = SMTP_SERVER
-        self.ftp_host = FTP_SERVER
-        self.ftp_port = FTP_PORT
-        self.ftp_username = FTP_USERNAME
-        self.ftp_pass = FTP_PASSWORD
-        self.file_path = email['file_path']
+    def __init__(self, email_config):
+        self.sender = 'cocostarcandrei84@gmail.com'
+        self.recipient = email_config['recipient']
+        self.body = email_config['message']
+        self.smtp_server = 'smtp.gmail.com'
+        self.smtp_port = 587
+        self.username = 'cocostarcandrei84@gmail.com'
+        self.password = 'wxxo mbqa nims qbqo'
+        self.file_path = email_config['file_path']
+        self.ftp_host = '138.68.98.108'
+        self.ftp_port = 21
+        self.ftp_username = 'yourusername'
+        self.ftp_pass = 'yourusername'
         self.target_path = self.file_path.split('/')[-1]
         self.ftp_instance = None
 
     def send_email(self):
+        msg = MIMEMultipart()
+        msg['From'] = self.sender
+        msg['To'] = self.recipient
+        msg['Subject'] = 'Hello from COCOSTARCU ANDREI!'
+
+        msg.attach(MIMEText(self.body, 'plain'))
+
+        file_path = self.file_path
+        filename = file_path.split('/')[-1]
+
+        with open(file_path, "rb") as attachment:
+            part = MIMEBase("application", "octet-stream")
+            part.set_payload(attachment.read())
+
+        encoders.encode_base64(part)
+
+        part.add_header(
+            "Content-Disposition",
+            f"attachment; filename= {filename}",
+        )
+
+        msg.attach(part)
+
         try:
-            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
-                server.sendmail(self.sender, [self.recipient], self.message)
+            with smtplib.SMTP(self.smtp_server, self.smtp_port) as smtp_server:
+                smtp_server.ehlo()
+                smtp_server.starttls()
+                smtp_server.login(self.username, self.password)
+                smtp_server.send_message(msg)
             print("Email sent successfully!")
         except Exception as e:
             print(f"Failed to send email: {e}")
@@ -40,8 +66,12 @@ class SenderServer:
         self.ftp_instance = ftp
 
     def upload_file(self):
-        self.ftp_connection()
-
-        with open(self.file_path, 'rb') as file:
-            self.ftp_instance.storbinary(f'STOR {self.target_path}', file)
+        try:
+            self.ftp_connection()
+            with open(self.file_path, 'rb') as file:
+                self.ftp_instance.storbinary(f'STOR {self.target_path}', file)
+            self.ftp_instance.quit()
+            print('File uploaded successfully!')
+        except Exception as e:
+            print(f'Failed to upload the file: {e}')
 

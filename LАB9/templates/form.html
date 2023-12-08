@@ -2,21 +2,60 @@
 <html>
 <head>
     <title>Simple Form</title>
+    <style>
+        body {
+            background-color: lightslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+            width: 400px;
+            height: 400px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
-<body style="background-color: lightslategrey">
+<body>
     <form action="/" method="post">
-        <label for="email_from">FROM____:</label>
-        <input type="text" id="email_from" name="field1"><br><br>
+        <label for="email_from">FROM:</label>
+        <input type="text" id="email_from" name="email_from"><br>
 
-        <label for="email_to">TO_______:</label>
-        <input type="text" id="email_to" name="field2"><br><br>
+        <label for="email_to">TO:</label>
+        <input type="text" id="email_to" name="email_to"><br>
 
         <label for="message">MESSAGE:</label>
-        <input type="text" id="message" name="field3"><br><br>
+        <input type="text" id="message" name="message"><br>
 
-        <label for="file_path">FILE_PATH:</label>
-        <input type="text" id="file_path" name="field3"><br><br>
-
+        <label for="file_path">FILE PATH:</label>
+        <input type="text" id="file_path" name="file_path"><br>
 
         <input type="submit" value="Submit">
     </form>

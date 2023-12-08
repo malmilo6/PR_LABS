@@ -2,7 +2,7 @@ from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 
-PATH = '/home/malmilo/Uni/PR_LABS_TASKS/LАB9/remote_storage'
+PATH = '/LАB9/local/remote_storage'
 
 
 def setup_ftp_server():
